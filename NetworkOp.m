@@ -46,23 +46,8 @@
 + (NetworkOp *)operationWithAddress:(NSString *)a parameters:(NSDictionary *)p
 {
     NetworkOp *networkOp = [[NetworkOp alloc] initWithAddress:a parameters:p];
-//    return [networkOp autorelease];
     return networkOp;
 }
-
-//- (void)dealloc
-//{
-//    [urlRequest release];
-//    if (urlConnection != nil)
-//        [urlConnection release];
-//    
-//    self.address = nil;
-//    self.delegate = nil;
-//    self.responseHeaders = nil;
-//    self.requestHeaders = nil;
-//    [super dealloc];
-//}
-
 
 - (void)sendRequest
 {
